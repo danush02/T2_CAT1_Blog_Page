@@ -1,0 +1,158 @@
+body{
+    background-image: url("header_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    border-bottom: 2px solid #000f55;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.header img{
+    width: 40%;
+    height: auto;
+}
+
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50vh;
+    margin-top: 3vh;
+}
+
+.nav_bar a{
+    text-decoration: none;
+    color: #000f55;
+    padding: 20px;
+    font-size: 3.5vh;
+    font-family: 'Beth Ellen', serif;
+}
+.nav_bar a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 10vh;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.content{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90%;
+}
+
+.content_img{
+    width: 20%;
+}
+
+
+.content_space {
+    border-radius: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
+  .content_image {
+    display: block;
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+
+  }
+  
+  .content_text {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #c5c5c5;
+  }
+  
+  .content_space:hover .content_text {
+    opacity: 0.8;
+  }
+  
+  .text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+.blogs{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.blog_post1{
+    display: flex;
+    border: 1px solid #000f55;
+    margin-left: 10vh;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.quotes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: medium;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 3.5vh;
+    font-weight: 700;
+    color: #000f55;
+    font-family:monospace;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+/* this is only due to codepen display don't use this outside of codepen */
+.container {
+  padding-top: 20px;
+}
